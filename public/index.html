@@ -1,20 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Single page" />
 
-<head>
+    <title>ADA India</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Single page">
+  <body>
+    <nav id="nav">
+      <img class="menu-btn" src="images/menu.png" alt="menu" />
+      <img src="images/logo.png" alt="logo" />
+      <img class="menu-btn" src="images/menu.png" alt="menu" />
+    </nav>
+    <div id="menu-overlay">Menu One<br />Menu Two<br />Menu Three</div>
+    <div class="video-wrapper">
+      <video
+        id="video-1"
+        preload="metadata"
+        playsinline="true"
+        muted="true"
+        autoplay="true"
+      >
+        <source src="videos/home-1.mp4" />
+      </video>
+      <div id="video-text-1" class="video-overlay-text">Discover</div>
+    </div>
+    <!-- <div id="top-text">
+      a life of <br />
+      timeless<br />
+      beauty
+    </div> -->
 
-  <title>Single page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+    <div class="video-wrapper">
+      <video
+        id="video-2"
+        preload="metadata"
+        playsinline="true"
+        muted="true"
+        autoplay="true"
+        loop="false"
+      >
+        <source src="videos/home-2.mp4" />
+      </video>
+      <div id="video-text-2" class="video-overlay-text">
+        a life of<br />timeless beauty
+      </div>
+    </div>
 
-<body>
-  <h1>Single page</h1>
-  <script src="bundle.js"></script>
-</body>
+    <div class="video-wrapper">
+      <video
+        id="video-3"
+        preload="metadata"
+        playsinline="true"
+        muted="true"
+        autoplay="true"
+        loop="true"
+      >
+        <source src="videos/home-3.mp4" />
+      </video>
+      <div id="video-text-3" class="video-overlay-text">unveiled</div>
+    </div>
 
+    <div class="text-section-full">
+      <div class="sub-text">BEAUTY</div>
+      <div class="title-text">DISCOVER OUR INSPIRATION</div>
+      <div class="main-text">
+        It’s no secret that beautiful underpins everything that we do at ADA –
+        we are renowned the world over for creating exceptional aquascapes. It
+        has been a part of our story ever since our founding in 1982 and it’s
+        everywhere you look when you experience ADA.
+      </div>
+    </div>
+    <div class="text-section-col">
+      <div class="max-width">
+        <div class="section-half">
+          <img class="image-discover" src="images/ada-1.png" alt="discover" />
+        </div>
+        <div class="section-half">
+          <div class="title-text">it compels us</div>
+          <!-- <div class="title-text">DISCOVER OUR INSPIRATION</div> -->
+          <div class="main-text">
+            Something that is beautiful, however fleeting, leaves a lasting
+            impression. For millennia ‘beautiful’ has been the fuel of the
+            world’s artists, designers, poets, conservationists and architects.
+            That love of beautiful drives ADA, too. Just as an artist might be
+            inspired to paint, or a musician to write a tune, beautiful inspires
+            us to craft the most beautiful nature aquariums in the world.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-wrapper">
+      <video
+        id="top-video"
+        preload="metadata"
+        playsinline="true"
+        muted="true"
+        autoplay="true"
+      >
+        <source src="videos/home-4.mp4" />
+      </video>
+      <!-- <div class="video-overlay-text">unveiled</div> -->
+    </div>
+    <div class="text-section-col">
+      <div class="max-width">
+        <div class="section-half right-align-text">
+          <div class="title-text">it compels us</div>
+          <!-- <div class="title-text">DISCOVER OUR INSPIRATION</div> -->
+          <div class="main-text">
+            Takashi Amano was a visionary who, through his intimate knowledge of
+            nature, intense curiosity and ability to think differently, endowed
+            his aquascapes with their fundamental technical and aesthetic
+            characteristics and set the way for his company’s long-lasting
+            success.<br />
+            <a href="discover.html" class="button">
+              discover more <img src="images/btn-arrow.png" alt="btn-arrow" />
+            </a>
+          </div>
+        </div>
+        <div class="section-half">
+          <img class="image-discover" src="images/ada-2.png" />
+        </div>
+      </div>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
 </html>
