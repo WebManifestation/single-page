@@ -37,6 +37,12 @@ video {
   width: 100%;
 }
 
+.full-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .video-wrapper {
   /* font-size: 64px; */
   text-transform: uppercase;
@@ -67,6 +73,7 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .text-section-col {
@@ -86,7 +93,7 @@ video {
 }
 
 .title-text {
-  font-size: 64px;
+  font-size: 6vw;
   margin-bottom: 32px;
 }
 
@@ -185,4 +192,64 @@ video {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .video-overlay-text {
+    font-size: 16vw;
+  }
+  .sub-text {
+    font-size: 4vw;
+    letter-spacing: 5px;
+    margin-bottom: 32px;
+  }
+
+  .title-text {
+    font-size: 12vw;
+    margin-bottom: 32px;
+  }
+  .main-text {
+    max-width: 80%;
+  }
+  .max-width {
+    flex-direction: column;
+  }
+
+  .section-half {
+    width: 100%;
+  }
+
+  .section-half .title-text {
+    width: 100%;
+    font-size: 6vw;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .section-half .main-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .image-discover {
+    padding: 64px 64px;
+  }
+
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4vw;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 16px;
+    margin: 32px 0;
+    cursor: pointer;
+    display: inline-block;
+}
 }
