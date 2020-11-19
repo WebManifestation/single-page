@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-html {
+/* html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-}
+} */
 
 body {
   margin: 0;
@@ -73,7 +73,7 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .text-section-col {
@@ -233,7 +233,8 @@ video {
   }
 
   .image-discover {
-    padding: 64px 64px;
+    width: 50%;
+    padding: 0 0 64px 0;
   }
 
   .column-reverse {
@@ -251,5 +252,5 @@ video {
     margin: 32px 0;
     cursor: pointer;
     display: inline-block;
-}
+  }
 }

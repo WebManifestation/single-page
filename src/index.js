@@ -1,3 +1,11 @@
+import FullPageScroll from "./FullPageScroll";
+
+const fullScreenElements = document.getElementsByClassName("full-screen");
+
+const homePage = new FullPageScroll(fullScreenElements);
+
+// Branch
+
 const video1 = document.getElementById("video-1");
 const video2 = document.getElementById("video-2");
 const video3 = document.getElementById("video-3");
@@ -23,7 +31,7 @@ video1Text.addEventListener("click", () => {
 });
 
 video2Text.addEventListener("click", () => {
-  console.log("hi");
+  // console.log("hi");
   window.scrollTo({
     top: window.innerHeight * 2,
     behavior: "smooth",
@@ -63,7 +71,7 @@ function playVideoWhenInView(videoElem) {
 
 for (let i = 0; i < menuBtn.length; i++) {
   const element = menuBtn[i];
-  console.log(element);
+  // console.log(element);
   element.addEventListener("click", handleMenuOpen);
 }
 
@@ -78,7 +86,7 @@ function handleMenuClose(e) {
 }
 
 function setVideoTextFadeInTime(videoElem, textElem, time) {
-  console.log(videoElem, textElem, time);
+  // console.log(videoElem, textElem, time);
 
   videoElem.addEventListener("timeupdate", handleTimeUpdate);
   function handleTimeUpdate(e) {
@@ -98,11 +106,11 @@ function onVideoOneEnd() {
 }
 
 function changeVideoOnSmallScreens() {
-  if(window.innerWidth <= 480) {
-    video1.src = 'videos/home-1-small.mp4'
-    video2.src = 'videos/home-2-small.mp4'
-    video3.src = 'videos/home-3-small.mp4'
-    paraVideo.src = 'videos/home-4-small.mp4'
+  if (window.innerWidth <= 480) {
+    video1.src = "videos/home-1-small.mp4";
+    video2.src = "videos/home-2-small.mp4";
+    video3.src = "videos/home-3-small.mp4";
+    paraVideo.src = "videos/home-4-small.mp4";
   }
 }
 
