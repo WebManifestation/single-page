@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Single page" />
+
+    <title>ADA India</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="nav">
+      <img class="menu-btn" src="images/menu.png" alt="menu" />
+      <a href="/"><img src="images/logo.png" alt="logo" /></a>
+      <img class="menu-btn" src="images/menu.png" alt="menu" />
+    </nav>
+    <div id="menu-overlay">
+      <a class="menu-item" href="/discover.html">ada world</a>
+      <a class="menu-item" href="/">shop</a>
+      <a class="menu-item" href="/school.html">school of aquascaping</a>
+      <a class="menu-item" href="/">contact us</a>
+    </div>
+    <img src="images/school/1.png" />
+    <img src="images/school/2.png" />
+    <img src="images/school/3.png" />
+    <img src="images/school/4.png" />
+    <img src="images/school/5.png" />
+    <div style="max-width: 1024px; margin: 0 auto">
+      <div
+        style="
+          font-family: Montserrat, sans-serif;
+          text-align: left;
+          font-size: 26px;
+          text-transform: uppercase;
+          padding: 16px;
+        "
+      >
+        Level a program
+      </div>
+      <ul class="points">
+        <li>
+          Aquascaping trend and philosophy
+          <br />
+          <br />
+          <div class="sub">
+            The What, the Where, the Why, the How of Nature Aquariums and the
+            World of Aquascaping
+          </div>
+        </li>
+
+        <li>
+          2D Aquascaping
+          <br />
+          <br />
+          <div class="sub">
+            Understanding the whys while experiencing nature: Putting them to
+            paper or dryscaping
+          </div>
+        </li>
+
+        <li>
+          Building an aquascape
+          <br />
+          <br />
+          <div class="sub">
+            The ingredients and know-how to build that Aquascape you've always
+            wanted
+          </div>
+        </li>
+
+        <li>
+          Becoming a channel partner
+          <br />
+          <br />
+          <div class="sub">
+            When it comes to business in the world of Nature Aquariums and
+            aquascaping, who better to understand and learn from than the
+            pioneers
+          </div>
+        </li>
+
+        <li>
+          Discipline in a business
+          <br />
+          <br />
+          <div class="sub">
+            Understanding the importance of discipline in your aquascaoing
+            business and how to maintain it
+          </div>
+        </li>
+
+        <li>
+          Recreate Nature with the Neo Glass Air Terrarium
+          <br />
+          <br />
+          <div class="sub">
+            The first step to experiencing and recreating a nature aquarium:
+            practically and theoretically
+          </div>
+        </li>
+
+        <li>
+          Aquascaping methodologies
+          <br />
+          <br />
+          <div class="sub">
+            The intricacies of Aquascaping presented and studied in detail
+          </div>
+        </li>
+        <li>
+          Plant farm visit and aquatic plant study
+          <br />
+          <br />
+          <div class="sub">
+            Understanding how and where one of the biggest players in a Nature
+            Aquarium and aquascaping come from – your plants!
+          </div>
+        </li>
+        <li>
+          Adip’s aquascapes: an Iwagumi layout study and practical workshop
+          <br />
+          <br />
+          <div class="sub">
+            Setting up a complete Nature Aquarium from scratch, with the highest
+            quality materials, tools and accessories
+          </div>
+        </li>
+
+        <li>
+          Aquarium photography
+          <br />
+          <br />
+          <div class="sub">
+            The importance of photographing your aquscapes, and everything it
+            takes to get the right shots
+          </div>
+        </li>
+        <li>
+          Creating brand awareness
+          <br />
+          <br />
+          <div class="sub">
+            When associated with the best, we have to learn how to work with the
+            best!
+          </div>
+        </li>
+        <li>
+          Customer Relationship Management & Optimization
+          <br />
+          <br />
+          <div class="sub">
+            Helping you reach out to your clientele with the right thought
+            process
+          </div>
+        </li>
+
+        <li>
+          ADA and you : Value of brand association
+          <br />
+          <br />
+          <div class="sub">What's in it for You, Me and Us</div>
+        </li>
+
+        <li>
+          Graduation and Certification
+          <br />
+          <br />
+          <div class="sub">
+            Each participant is tested on their knowledge and learning during
+            the period of the program, only after which they're certified
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      const menuBtn = document.getElementsByClassName("menu-btn");
+      const menuOverlay = document.getElementById("menu-overlay");
+
+      for (let i = 0; i < menuBtn.length; i++) {
+        const element = menuBtn[i];
+        element.addEventListener("click", handleMenuOpen);
+      }
+
+      menuOverlay.addEventListener("click", handleMenuClose);
+
+      function handleMenuOpen(e) {
+        menuOverlay.style.opacity = 1;
+        menuOverlay.style.pointerEvents = "initial";
+      }
+
+      function handleMenuClose(e) {
+        menuOverlay.style.opacity = 0;
+        menuOverlay.style.pointerEvents = "none";
+      }
+    </script>
+  </body>
+</html>

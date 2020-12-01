@@ -12,7 +12,7 @@ let isScrolling = false;
 
 menuOverlay.addEventListener("click", handleMenuClose);
 
-// video1.addEventListener("ended", onVideoOneEnd);
+video1.addEventListener("ended", onVideoOneEnd);
 changeVideoOnSmallScreens();
 
 video1Text.addEventListener("click", () => {

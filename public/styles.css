@@ -37,6 +37,16 @@ video {
   width: 100%;
 }
 
+#search-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+#search-btn img {
+  width: 128px;
+}
+
 .full-video {
   width: 100vw;
   height: 100vh;
@@ -73,7 +83,7 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .text-section-col {
@@ -95,6 +105,7 @@ video {
 .title-text {
   font-size: 6vw;
   margin-bottom: 32px;
+  text-transform: uppercase;
 }
 
 .main-text {
@@ -126,7 +137,7 @@ video {
 }
 
 .image-discover {
-  padding: 64px 64px;
+  padding: 0 64px;
   padding-left: 0;
 }
 
@@ -185,13 +196,72 @@ video {
   background-color: hsla(0, 0%, 0%, 0.9);
   z-index: 9999;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 64px;
   letter-spacing: 2px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease-in-out;
+  flex-direction: column;
+  padding-top: 32px;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  padding-left: 32px;
+  margin-top: 32px;
+  text-align: left;
+  font-size: 32px;
+}
+
+.container-full {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(images/discover-space.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.container-inside {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding-left: 20%;
+}
+
+.container-inside-title {
+  font-size: 64px;
+  padding: 32px 16px 32px 0;
+}
+
+.container-inside-sub {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 16px;
+  font-size: 20px;
+}
+
+.points {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  width: 50%;
+}
+
+.points li {
+  font-size: 18px;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.points .sub {
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -233,7 +303,7 @@ video {
   }
 
   .image-discover {
-    padding: 64px 64px;
+    padding: 32px 64px 64px;
   }
 
   .column-reverse {
@@ -251,5 +321,28 @@ video {
     margin: 32px 0;
     cursor: pointer;
     display: inline-block;
-}
+  }
+
+  .text-section-col {
+    padding: 32px 16px;
+  }
+
+  .container-inside {
+    bottom: 40%;
+    padding-left: 10%;
+  }
+
+  .container-inside-title {
+    font-size: 32px;
+    padding: 16px 16px 16px 0;
+  }
+
+  .container-inside-sub {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 16px;
+    font-size: 10px;
+  }
+  .points {
+    width: 100%;
+  }
 }
