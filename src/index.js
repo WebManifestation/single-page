@@ -10,7 +10,7 @@ const menuOverlay = document.getElementById("menu-overlay");
 
 let isScrolling = false;
 
-menuOverlay.addEventListener("click", handleMenuClose);
+// menuOverlay.addEventListener("click", handleMenuClose);
 
 video1.addEventListener("ended", onVideoOneEnd);
 changeVideoOnSmallScreens();
@@ -23,7 +23,7 @@ video1Text.addEventListener("click", () => {
 });
 
 video2Text.addEventListener("click", () => {
-  console.log("hi");
+  // console.log("hi");
   window.scrollTo({
     top: window.innerHeight * 2,
     behavior: "smooth",
@@ -43,6 +43,16 @@ setVideoTextFadeInTime(video3, video3Text, 5);
 
 window.addEventListener("scroll", handleScroll);
 
+video2.addEventListener("canplay", (e) => {
+  playVideoWhenInView(video2);
+});
+video3.addEventListener("canplay", () => {
+  playVideoWhenInView(video3);
+});
+paraVideo.addEventListener("canplay", () => {
+  playVideoWhenInView(paraVideo);
+});
+
 function handleScroll() {
   // playVideoWhenInView(video1);
   playVideoWhenInView(video2);
@@ -61,24 +71,8 @@ function playVideoWhenInView(videoElem) {
   }
 }
 
-for (let i = 0; i < menuBtn.length; i++) {
-  const element = menuBtn[i];
-  console.log(element);
-  element.addEventListener("click", handleMenuOpen);
-}
-
-function handleMenuOpen(e) {
-  menuOverlay.style.opacity = 1;
-  menuOverlay.style.pointerEvents = "initial";
-}
-
-function handleMenuClose(e) {
-  menuOverlay.style.opacity = 0;
-  menuOverlay.style.pointerEvents = "none";
-}
-
 function setVideoTextFadeInTime(videoElem, textElem, time) {
-  console.log(videoElem, textElem, time);
+  // console.log(videoElem, textElem, time);
 
   videoElem.addEventListener("timeupdate", handleTimeUpdate);
   function handleTimeUpdate(e) {
@@ -98,11 +92,11 @@ function onVideoOneEnd() {
 }
 
 function changeVideoOnSmallScreens() {
-  if(window.innerWidth <= 480) {
-    video1.src = 'videos/home-1-small.mp4'
-    video2.src = 'videos/home-2-small.mp4'
-    video3.src = 'videos/home-3-small.mp4'
-    paraVideo.src = 'videos/home-4-small.mp4'
+  if (window.innerWidth <= 480) {
+    video1.src = "videos/home-1-small.mp4";
+    video2.src = "videos/home-2-small.mp4";
+    video3.src = "videos/home-3-small.mp4";
+    paraVideo.src = "videos/home-4-small.mp4";
   }
 }
 

@@ -7,7 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Single page" />
+    <meta
+      name="description"
+      content="ADA is a prominent brand in the Nature Aquariums Industry. ADA develops products of aquarium, lighting and CO2 supply system to propose Nature Aquarium."
+    />
 
     <title>ADA India</title>
     <link rel="stylesheet" href="styles.css" />
@@ -16,21 +19,81 @@
   <body>
     <nav id="nav">
       <img class="menu-btn" src="images/menu.png" alt="menu" />
-      <a href="/"><img src="images/logo.png" alt="logo" /></a>
+      <a href="./"><img src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
     <div id="menu-overlay">
-      <a class="menu-item" href="/discover.html">ada world</a>
-      <a class="menu-item" href="/">shop</a>
-      <a class="menu-item" href="/school.html">school of aquascaping</a>
-      <a class="menu-item" href="/">contact us</a>
+      <a class="menu-item" href="discover.html">ada world</a>
+      <a class="menu-item" href="https://shop.adaindia.in/">shop</a>
+      <a class="menu-item" href="school.html">school of aquascaping</a>
+      <a class="menu-item" href="https://adaindia.in/contact-ada/"
+        >contact us</a
+      >
+      <div id="search-btn" href="search">
+        <label for="search-input"><img src="images/search.png" /></label>
+        <form style="width: 100%" action="https://shop.adaindia.in/">
+          <input
+            id="search-input"
+            name="s"
+            class="search-input"
+            placeholder="SEARCH"
+          />
+          <input type="hidden" name="post_type" value="product" />
+        </form>
+      </div>
+      <img id="close-btn" src="images/close-btn.png" />
     </div>
-    <img src="images/school/1.png" />
-    <img src="images/school/2.png" />
-    <img src="images/school/3.png" />
-    <img src="images/school/4.png" />
-    <img src="images/school/5.png" />
-    <div style="max-width: 1024px; margin: 0 auto">
+
+    <div
+      class="container-full"
+      style="background-image: url(images/school/school-top.png)"
+    ></div>
+    <!-- <img class="school-top-img" src="images/school/school-top.png" /> -->
+
+    <div class="text-section-full" style="height: 64vh">
+      <div class="sub-text">LET YOUR IMAGINATION</div>
+      <div class="title-text">RUN WILD</div>
+      <div class="main-text" style="max-width: 680px">
+        "The ADA School of Aquascaping"- The first of its kind in the world,
+        brought to you by the premier in Nature Aquariums and aquarium products.
+      </div>
+    </div>
+
+    <div class="school-inside-container">
+      <div class="school-inside-title">
+        AND HONE THE SKILLS TO BE PREPARED<br />FOR WHEN IT DOES.
+      </div>
+      <div class="school-inside-copy">
+        The ADA school of Aquascaping and ADA India is looking to take the
+        opportunity to help like minded individuals start their 'Entrepreneurial
+        journey' in Aquascaping and take their hobby/ interest to the next level
+        with us.
+        <br />
+        <br />
+        Considering that the need of the hour in today's world is the
+        conservation/ preservation of nature in all her splendour, we bring to
+        you an institution which will Nurture your love for Nature, teach you to
+        connect with Mother Nature in a better way and put it together with
+        networking with the right people, you have all you need to begin your
+        'Entrepreneurial journey'.
+        <br />
+        <br />
+        In turn, this leads to more minds with the required knowledge and
+        understanding, helping us conserve nature and go out into the world to
+        show the importance and beauty of Nature Aquariums and Aquascaping.
+      </div>
+    </div>
+
+    <div class="iframe-container">
+      <iframe
+        src="https://www.youtube.com/embed/veSjnCg0i10?rel=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        class="iframe-video"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div style="max-width: 1024px; margin: 0 auto; position: relative">
       <div
         style="
           font-family: Montserrat, sans-serif;
@@ -176,18 +239,69 @@
           </div>
         </li>
       </ul>
+      <img class="floating-image" src="images/school/4.png" />
+    </div>
+
+    <!-- <img src="images/school/5.png" /> -->
+
+    <div style="max-width: 800px; margin: 128px auto 0; padding: 0 32px">
+      <div
+        style="
+          font-size: 25px;
+          letter-spacing: 6px;
+          font-family: Montserrat, sans-serif;
+          text-align: left;
+          max-width: 600px;
+          margin: 0 auto;
+          line-height: 1.2em;
+        "
+      >
+        I AM INTERESTED IN WHAT SCHOOL OF AQUASCAPING HAS TO OFFER.
+      </div>
+      <img style="padding: 64px 0" src="images/school/school-join.png" />
+      <div
+        style="
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          text-align: left;
+          max-width: 600px;
+          margin: 0 auto;
+        "
+      >
+        Please click below to fill in your contact information and register
+        interest in School of Aquascaping (SoA) programmes.<br />
+        <a
+          target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfiXUZmLcntY6ecQD3FwORnkOY0NcaXl-F8SIJhIbjWMzaYmg/viewform"
+          style="
+            font-family: Montserrat, sans-serif;
+            font-size: 13px;
+            padding: 10px 32px;
+            background-color: #808080;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 16px;
+            margin-bottom: 128px;
+            letter-spacing: 4px;
+          "
+          >register interest</a
+        >
+      </div>
     </div>
 
     <script>
       const menuBtn = document.getElementsByClassName("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
       const menuOverlay = document.getElementById("menu-overlay");
+
+      closeBtn.addEventListener("click", handleMenuClose);
 
       for (let i = 0; i < menuBtn.length; i++) {
         const element = menuBtn[i];
         element.addEventListener("click", handleMenuOpen);
       }
-
-      menuOverlay.addEventListener("click", handleMenuClose);
 
       function handleMenuOpen(e) {
         menuOverlay.style.opacity = 1;

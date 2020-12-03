@@ -7,7 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Single page" />
+    <meta
+      name="description"
+      content="ADA is a prominent brand in the Nature Aquariums Industry. ADA develops products of aquarium, lighting and CO2 supply system to propose Nature Aquarium."
+    />
 
     <title>ADA India</title>
     <link rel="stylesheet" href="styles.css" />
@@ -16,15 +19,29 @@
   <body>
     <nav id="nav">
       <img class="menu-btn" src="images/menu.png" alt="menu" />
-      <a href="/"><img src="images/logo.png" alt="logo" /></a>
+      <a href="./"><img src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
     <div id="menu-overlay">
-      <a class="menu-item" href="/discover.html">ada world</a>
-      <a class="menu-item" href="/">shop</a>
-      <a class="menu-item" href="/school.html">school of aquascaping</a>
-      <a class="menu-item" href="/">contact us</a>
-      <a id="search-btn" href="/search"><img src="images/search.png" /></a>
+      <a class="menu-item" href="discover.html">ada world</a>
+      <a class="menu-item" href="https://shop.adaindia.in/">shop</a>
+      <a class="menu-item" href="school.html">school of aquascaping</a>
+      <a class="menu-item" href="https://adaindia.in/contact-ada/"
+        >contact us</a
+      >
+      <div id="search-btn" href="search">
+        <label for="search-input"><img src="images/search.png" /></label>
+        <form style="width: 100%" action="https://shop.adaindia.in/">
+          <input
+            id="search-input"
+            name="s"
+            class="search-input"
+            placeholder="SEARCH"
+          />
+          <input type="hidden" name="post_type" value="product" />
+        </form>
+      </div>
+      <img id="close-btn" src="images/close-btn.png" />
     </div>
     <div class="video-wrapper">
       <video
@@ -141,5 +158,27 @@
       </div>
     </div>
     <script src="bundle.js"></script>
+    <script>
+      const menuBtn = document.getElementsByClassName("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
+      const menuOverlay = document.getElementById("menu-overlay");
+
+      closeBtn.addEventListener("click", handleMenuClose);
+
+      for (let i = 0; i < menuBtn.length; i++) {
+        const element = menuBtn[i];
+        element.addEventListener("click", handleMenuOpen);
+      }
+
+      function handleMenuOpen(e) {
+        menuOverlay.style.opacity = 1;
+        menuOverlay.style.pointerEvents = "initial";
+      }
+
+      function handleMenuClose(e) {
+        menuOverlay.style.opacity = 0;
+        menuOverlay.style.pointerEvents = "none";
+      }
+    </script>
   </body>
 </html>

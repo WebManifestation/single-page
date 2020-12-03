@@ -7,7 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Single page" />
+    <meta
+      name="description"
+      content="ADA is a prominent brand in the Nature Aquariums Industry. ADA develops products of aquarium, lighting and CO2 supply system to propose Nature Aquarium."
+    />
 
     <title>ADA India</title>
     <link rel="stylesheet" href="styles.css" />
@@ -16,15 +19,31 @@
   <body>
     <nav id="nav">
       <img class="menu-btn" src="images/menu.png" alt="menu" />
-      <a href="/"><img src="images/logo.png" alt="logo" /></a>
+      <a href="./"><img src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
     <div id="menu-overlay">
-      <a class="menu-item" href="/discover.html">ada world</a>
-      <a class="menu-item" href="/">shop</a>
-      <a class="menu-item" href="/school.html">school of aquascaping</a>
-      <a class="menu-item" href="/">contact us</a>
+      <a class="menu-item" href="discover.html">ada world</a>
+      <a class="menu-item" href="https://shop.adaindia.in/">shop</a>
+      <a class="menu-item" href="school.html">school of aquascaping</a>
+      <a class="menu-item" href="https://adaindia.in/contact-ada/"
+        >contact us</a
+      >
+      <div id="search-btn" href="search">
+        <label for="search-input"><img src="images/search.png" /></label>
+        <form style="width: 100%" action="https://shop.adaindia.in/">
+          <input
+            id="search-input"
+            name="s"
+            class="search-input"
+            placeholder="SEARCH"
+          />
+          <input type="hidden" name="post_type" value="product" />
+        </form>
+      </div>
+      <img id="close-btn" src="images/close-btn.png" />
     </div>
+    <!-- <img src="images/discover.png" /> -->
     <div
       class="container-full"
       style="background-image: url(images/discover.png)"
@@ -73,13 +92,21 @@
       <div class="main-text">
         Amano said he accumulates countless images of nature in his mind by
         taking numerous number of landscape photographs. These images will be
-        reflected in the creation of Nature Aquarium layouts. This is what
+        reflected in the creation of Nature Aquarium layouts. This is why a
         Nature Aquarium is crucially different from other planted aquarium
         layout techniques.
       </div>
     </div>
 
-    <img src="images/discover-2.png" />
+    <div
+      class="container-full"
+      style="background-image: url(images/discover-2.png)"
+    ></div>
+    <div class="split-container">
+      <img class="split-image" src="images/discover-split-1.png" />
+      <img class="split-image" src="images/discover-split-2.png" />
+    </div>
+    <!-- <img src="images/discover-2.png" /> -->
     <div
       class="container-full"
       style="background-image: url(images/discover-4.png)"
@@ -91,6 +118,11 @@
         <div class="container-inside-sub">- TAKASHI AMANO</div>
       </div>
     </div>
+
+    <img
+      style="position: absolute; margin-top: -11vw"
+      src="images/fade-element.png"
+    />
     <img src="images/discover-5.png" />
 
     <div class="text-section-col">
@@ -104,6 +136,7 @@
       </div>
     </div>
     <img src="images/discover-6.png" />
+    <img src="images/discover-6p.png" />
 
     <div class="text-section-col">
       <div class="main-text">
@@ -154,7 +187,7 @@
       </div>
     </div>
 
-    <div class="title-text">THE ART OF IWAGUMI</div>
+    <div class="title-text" style="margin-top: 128px;">THE ART OF IWAGUMI</div>
 
     <img src="images/discover-9.png" />
 
@@ -215,6 +248,8 @@
       </div>
     </div>
 
+    <!-- <img src="images/discover-space.png" /> -->
+
     <div class="container-full">
       <div class="container-inside">
         <div class="container-inside-sub">CAPTURE</div>
@@ -259,12 +294,12 @@
           </div>
         </div>
         <div class="section-half">
-          <img class="image-discover" src="images/discover-10.png" />
+          <img class="image-discover" src="images/discover-14.png" />
         </div>
       </div>
     </div>
 
-    <img src="images/discover-ph.png" />
+    <img style="margin-top: 128px;" src="images/discover-ph.png" />
 
     <div class="text-section-col">
       <div class="main-text">
@@ -276,18 +311,49 @@
       </div>
     </div>
 
-    <a href="/school.html"><img src="images/discover-last.png" /></a>
+    <div
+      class="container-full"
+      style="
+        background-image: url(images/discover-learn.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          padding: 32px;
+          align-items: center;
+          flex-direction: column;
+          background-color: hsla(0, 0%, 0%, 0.5);
+          margin: 0 16px;
+        "
+      >
+        <div class="title-text">craft beauty</div>
+        <div class="last-main-text">
+          The ADA School of Aquascaping - The first of its kind in the world,
+          brought to you by the premier in Nature Aquariums and aquarium
+          products.
+        </div>
+        <a href="school.html" class="button">
+          discover more <img src="images/btn-arrow.png" alt="btn-arrow" />
+        </a>
+      </div>
+    </div>
 
     <script>
       const menuBtn = document.getElementsByClassName("menu-btn");
+      const closeBtn = document.getElementById("close-btn");
       const menuOverlay = document.getElementById("menu-overlay");
+
+      closeBtn.addEventListener("click", handleMenuClose);
 
       for (let i = 0; i < menuBtn.length; i++) {
         const element = menuBtn[i];
         element.addEventListener("click", handleMenuOpen);
       }
-
-      menuOverlay.addEventListener("click", handleMenuClose);
 
       function handleMenuOpen(e) {
         menuOverlay.style.opacity = 1;
