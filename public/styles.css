@@ -104,7 +104,7 @@ video {
 }
 
 .text-section-full {
-  padding: 64px 16px;
+  padding: 128px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,6 +136,16 @@ video {
   line-height: 1em;
 }
 
+.video-top-text {
+  font-size: 32px;
+  letter-spacing: 5px;
+  line-height: 1.5em;
+  margin-top: 64px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
 .main-text {
   max-width: 1024px;
   font-family: "Open Sans", sans-serif;
@@ -147,6 +157,16 @@ video {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.section-half .top-text {
+  font-size: 58px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  line-height: 1em;
+  width: 25vw;
+  text-align: left;
+  margin-bottom: 16px;
 }
 
 .section-half .title-text {
@@ -206,14 +226,20 @@ video {
 }
 
 #nav {
-  height: 64px;
+  height: 80px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* background-color: cornflowerblue; */
   z-index: 99;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 9999;
+}
+
+#logo-img {
+  width: 120px;
 }
 
 .menu-btn {
@@ -310,20 +336,20 @@ video {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 128px 32px;
+  padding: 128px 32px 160px;
 }
 
 .school-inside-title {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 4px;
-  font-size: 2.2vw;
-  margin-bottom: 64px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-bottom: 128px;
   line-height: 1.5em;
 }
 
 .school-inside-copy {
   font-family: "Open Sans", sans-serif;
-  max-width: 1024px;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.5em;
   font-size: 20px;
@@ -331,10 +357,11 @@ video {
 
 .iframe-container {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 0;
   padding-bottom: 56.25%;
-  margin-bottom: 64px;
+  /* margin-bottom: 64px; */
+  margin: 64px auto 64px;
 }
 
 .iframe-video {
@@ -343,6 +370,17 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.school-programs {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  text-align: left;
+  line-height: 1.5em;
+  max-width: 1024px;
+  margin: 0 auto 128px;
+  letter-spacing: 4px;
+  padding-left: 16px;
 }
 
 .split-container {
@@ -364,6 +402,11 @@ video {
 
 .school-top-img {
   margin-top: 32px;
+}
+
+.discover-extra {
+  width: 50%;
+  margin: 128px auto 64px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -461,6 +504,9 @@ video {
   .split-container {
     flex-direction: column;
   }
+  .school-programs {
+    font-size: 40px;
+}
 
   .split-image {
     width: 100%;
@@ -468,5 +514,12 @@ video {
   }
   .school-top-img {
     margin-top: 64px;
+  }
+  .iframe-container {
+    width: 100%;
+  }
+
+  .section-half .top-text {
+    width: initial;
   }
 }

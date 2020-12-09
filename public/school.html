@@ -19,7 +19,7 @@
   <body>
     <nav id="nav">
       <img class="menu-btn" src="images/menu.png" alt="menu" />
-      <a href="./"><img src="images/logo.png" alt="logo" /></a>
+      <a href="./"><img id="logo-img" src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
     <div id="menu-overlay">
@@ -53,31 +53,62 @@
     <div class="text-section-full" style="height: 64vh">
       <div class="sub-text">LET YOUR IMAGINATION</div>
       <div class="title-text">RUN WILD</div>
-      <div class="main-text" style="max-width: 680px">
+      <!-- <div class="main-text" style="max-width: 680px">
         "The ADA School of Aquascaping"- The first of its kind in the world,
         brought to you by the premier in Nature Aquariums and aquarium products.
-      </div>
+      </div> -->
     </div>
 
     <div class="school-inside-container">
       <div class="school-inside-title">
-        AND HONE THE SKILLS TO BE PREPARED<br />FOR WHEN IT DOES.
+        AND HONE THE SKILLS<br />TO BE PREPARED<br />FOR WHEN IT DOES.
       </div>
+      <div class="title-text">ADA SCHOOL OF AQUASCAPING</div>
       <div class="school-inside-copy">
-        The ADA school of Aquascaping and ADA India is looking to take the
-        opportunity to help like minded individuals start their 'Entrepreneurial
-        journey' in Aquascaping and take their hobby/ interest to the next level
-        with us.
-        <br />
-        <br />
-        Considering that the need of the hour in today's world is the
-        conservation/ preservation of nature in all her splendour, we bring to
-        you an institution which will Nurture your love for Nature, teach you to
-        connect with Mother Nature in a better way and put it together with
-        networking with the right people, you have all you need to begin your
-        'Entrepreneurial journey'.
-        <br />
-        <br />
+        The first of its kind in the world, brought to you by the premier in
+        Nature Aquariums and aquarium products.
+      </div>
+    </div>
+
+    <div class="text-section-col">
+      <div class="max-width">
+        <div class="section-half">
+          <img
+            class="image-discover"
+            src="images/school/school-logo.png"
+            alt="discover"
+          />
+        </div>
+        <div class="section-half">
+          <div class="main-text">
+            The ADA school of Aquascaping and ADA India is looking to take the
+            opportunity to help like minded individuals start their venture in
+            Aquascaping and take their hobby or interest to the next level.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-section-col">
+      <div class="max-width column-reverse">
+        <div class="section-half right-align-text">
+          <div class="main-text">
+            Considering that the need of the hour in today's world is the
+            conservation of nature in all her splendour, we bring to you an
+            institution which will Nurture your love for Nature, teach you to
+            connect with Mother Nature in a better way and put it together with
+            networking with the right people, you have all you need to begin
+            your entrepreneurial journey.
+          </div>
+        </div>
+        <div class="section-half">
+          <img class="image-discover" src="images/school/school-col-2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="text-section-col">
+      <div class="main-text">
         In turn, this leads to more minds with the required knowledge and
         understanding, helping us conserve nature and go out into the world to
         show the importance and beauty of Nature Aquariums and Aquascaping.
@@ -85,14 +116,80 @@
     </div>
 
     <div class="iframe-container">
-      <iframe
+      <div id="player" class="iframe-video"></div>
+      <!-- <img src="images/school/school-video.png" /> -->
+      <div
+        id="play-video"
+        style="
+          display: none;
+          background-image: url(images/school/school-video.png);
+          background-position: center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 99;
+        "
+      ></div>
+      <!-- <iframe
         src="https://www.youtube.com/embed/veSjnCg0i10?rel=0"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         class="iframe-video"
         allowfullscreen
-      ></iframe>
+      ></iframe> -->
     </div>
+
+    <div
+      id="sign-up-section"
+      style="max-width: 1000px; margin: 128px auto 0; padding: 0 32px"
+    >
+      <div
+        style="
+          font-size: 25px;
+          letter-spacing: 6px;
+          font-family: Montserrat, sans-serif;
+          text-align: left;
+          max-width: 700px;
+          margin: 0 auto;
+          line-height: 1.2em;
+        "
+      >
+        I AM INTERESTED IN WHAT SCHOOL OF AQUASCAPING HAS TO OFFER.
+      </div>
+      <img style="padding: 64px 0" src="images/school/school-join.png" />
+      <div
+        style="
+          font-size: 16px;
+          font-family: 'Open Sans', sans-serif;
+          text-align: left;
+          max-width: 700px;
+          margin: 0 auto;
+        "
+      >
+        Please click below to fill in your contact information and register
+        interest in School of Aquascaping (SoA) programmes.<br />
+        <a
+          target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfiXUZmLcntY6ecQD3FwORnkOY0NcaXl-F8SIJhIbjWMzaYmg/viewform"
+          style="
+            font-family: Montserrat, sans-serif;
+            font-size: 13px;
+            padding: 10px 32px;
+            background-color: #808080;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-top: 16px;
+            margin-bottom: 128px;
+            letter-spacing: 4px;
+          "
+          >register interest</a
+        >
+      </div>
+    </div>
+    <div class="school-programs">OUR<br />PROGRAMMES</div>
     <div style="max-width: 1024px; margin: 0 auto; position: relative">
       <div
         style="
@@ -101,9 +198,10 @@
           font-size: 26px;
           text-transform: uppercase;
           padding: 16px;
+          letter-spacing: 6px;
         "
       >
-        Level a program
+        LEVEL A Programme:
       </div>
       <ul class="points">
         <li>
@@ -242,61 +340,154 @@
       <img class="floating-image" src="images/school/4.png" />
     </div>
 
-    <!-- <img src="images/school/5.png" /> -->
-
-    <div style="max-width: 800px; margin: 128px auto 0; padding: 0 32px">
+    <div style="max-width: 1000px; margin: 128px auto 0; padding: 0 32px">
       <div
         style="
           font-size: 25px;
           letter-spacing: 6px;
           font-family: Montserrat, sans-serif;
           text-align: left;
-          max-width: 600px;
           margin: 0 auto;
           line-height: 1.2em;
+          text-transform: uppercase;
         "
       >
-        I AM INTERESTED IN WHAT SCHOOL OF AQUASCAPING HAS TO OFFER.
+        LEVEL O Programme:
       </div>
-      <img style="padding: 64px 0" src="images/school/school-join.png" />
+      <img
+        style="padding: 64px 0; max-width: 700px"
+        src="images/school/school-o-lvl.png"
+      />
       <div
         style="
-          font-size: 12px;
+          font-size: 16px;
           font-family: 'Open Sans', sans-serif;
           text-align: left;
-          max-width: 600px;
+          max-width: 700px;
           margin: 0 auto;
         "
       >
-        Please click below to fill in your contact information and register
-        interest in School of Aquascaping (SoA) programmes.<br />
-        <a
-          target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfiXUZmLcntY6ecQD3FwORnkOY0NcaXl-F8SIJhIbjWMzaYmg/viewform"
-          style="
-            font-family: Montserrat, sans-serif;
-            font-size: 13px;
-            padding: 10px 32px;
-            background-color: #808080;
-            color: white;
-            display: inline-block;
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-top: 16px;
-            margin-bottom: 128px;
-            letter-spacing: 4px;
-          "
-          >register interest</a
-        >
+        Once you have gained the basic experience by completing Level A, get
+        ready to take what you have learned to the next level. Learn the art in
+        a lot more detail with the right kind of tools and knowledge to attain
+        mastery. Develop the confidence for creating and sustaining your own
+        aquascapes.
       </div>
     </div>
+
+    <div style="max-width: 1000px; margin: 128px auto 0; padding: 0 32px">
+      <div
+        style="
+          font-size: 25px;
+          letter-spacing: 6px;
+          font-family: Montserrat, sans-serif;
+          text-align: left;
+          margin: 0 auto;
+          line-height: 1.2em;
+          text-transform: uppercase;
+        "
+      >
+        Chalo japan:
+      </div>
+      <img
+        style="padding: 64px 0; max-width: 700px"
+        src="images/school/school-chalo.png"
+      />
+      <div
+        style="
+          font-size: 16px;
+          font-family: 'Open Sans', sans-serif;
+          text-align: left;
+          max-width: 700px;
+          margin: 0 auto;
+        "
+      >
+        Get ready to go to the mecca of Nature Aquariums. This is where it all
+        started, Niigata, Japan. Join in on an indulgent, exclusive, and
+        life-changing experience which will leave you spellbound. A feather in
+        your hat which you would be proud of for the rest of your life.
+      </div>
+      <div
+        style="
+          font-size: 16px;
+          font-family: 'Open Sans', sans-serif;
+          text-align: center;
+          max-width: 700px;
+          margin: 128px auto;
+          position: relative;
+          padding: 0 64px;
+        "
+      >
+        For more information contact us by registering your interest.
+        <img
+          id="go-to-top"
+          style="
+            position: absolute;
+            top: -8px;
+            right: 0;
+            width: 55px;
+            cursor: pointer;
+          "
+          src="images/school/up-btn.png"
+        />
+      </div>
+    </div>
+
+    <!-- <img src="images/school/5.png" /> -->
 
     <script>
       const menuBtn = document.getElementsByClassName("menu-btn");
       const closeBtn = document.getElementById("close-btn");
+      const playVideo = document.getElementById("play-video");
       const menuOverlay = document.getElementById("menu-overlay");
+      const goToTopBtn = document.getElementById("go-to-top");
+      const signUpSection = document.getElementById("sign-up-section");
+
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("player", {
+          videoId: "veSjnCg0i10",
+          playerVars: {
+            rel: 0,
+            // controls: 0,
+          },
+          events: {
+            onReady: onPlayerReady,
+            // onStateChange: onPlayerStateChange,
+          },
+        });
+      }
+
+      function onPlayerReady(event) {
+        playVideo.style.display = "block";
+      }
+
+      playVideo.addEventListener("click", () => {
+        if (player) {
+          playVideo.style.display = "none";
+          player.playVideo();
+        }
+      });
 
       closeBtn.addEventListener("click", handleMenuClose);
+
+      goToTopBtn.addEventListener("click", () => {
+        console.log(
+          "lol",
+          signUpSection.getBoundingClientRect(),
+          window.pageYOffset
+        );
+        const getRect = signUpSection.getBoundingClientRect();
+        window.scrollTo({
+          top: window.pageYOffset + getRect.top - 128,
+          behavior: "smooth",
+        });
+      });
 
       for (let i = 0; i < menuBtn.length; i++) {
         const element = menuBtn[i];
