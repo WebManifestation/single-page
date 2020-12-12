@@ -22,7 +22,7 @@
       <a href="./"><img id="logo-img" src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
-    <div id="menu-overlay">
+    <div style="opacity: 0" id="menu-overlay">
       <a class="menu-item" href="discover.html">ada world</a>
       <a class="menu-item" href="https://shop.adaindia.in/">shop</a>
       <a class="menu-item" href="school.html">school of aquascaping</a>
@@ -43,13 +43,18 @@
       </div>
       <img id="close-btn" src="images/close-btn.png" />
     </div>
-    <div class="video-wrapper">
+
+    <img class="only-mobile" src="images/discover-1-mobile.png" />
+    <img class="only-mobile" src="images/discover-2-mobile.png" />
+    <img class="only-mobile" src="images/discover-3-mobile.png" />
+    
+
+    <div class="video-wrapper no-mobile">
       <video
         class="full-video"
         id="video-1"
         preload="metadata"
         playsinline="true"
-        autoplay="true"
         muted="true"
       >
         <source src="videos/home-1.mp4" type="video/mp4" />
@@ -62,14 +67,13 @@
       beauty
     </div> -->
 
-    <div class="video-wrapper">
+    <div class="video-wrapper no-mobile">
       <video
         class="full-video"
         id="video-2"
         preload="metadata"
         playsinline="true"
         muted="true"
-        loop="false"
         autoplay="true"
       >
         <source src="videos/home-2.mp4" />
@@ -79,14 +83,13 @@
       </div>
     </div>
 
-    <div class="video-wrapper">
+    <div class="video-wrapper no-mobile">
       <video
         class="full-video"
         id="video-3"
         preload="metadata"
         playsinline="true"
         muted="true"
-        loop="true"
         autoplay="true"
       >
         <source src="videos/home-3.mp4" />
@@ -94,7 +97,7 @@
       <div id="video-text-3" class="video-overlay-text">unveiled</div>
     </div>
 
-    <div class="text-section-full">
+    <div id="video-end" class="text-section-full">
       <div class="title-text" style="margin-bottom: 8px">BEAUTY</div>
       <div class="sub-text">IS OUR INSPIRATION</div>
       <div class="main-text">
@@ -119,7 +122,7 @@
       <!-- <div class="video-overlay-text">unveiled</div> -->
     </div>
 
-    <div style="margin-top: 100px" class="text-section-col">
+    <div style="margin-top: 64px" class="text-section-col">
       <div class="max-width">
         <div class="section-half">
           <img class="image-discover" src="images/ada-1.png" alt="discover" />
@@ -132,15 +135,16 @@
             Something that is beautiful, however fleeting, leaves a lasting
             impression. For millennia ‘beautiful’ has been the fuel of the
             world’s artists, designers, poets, conservationists and architects.
-            That love of beautiful drives ADA, too. Just as an artist might be
-            inspired to paint, or a musician to write a tune, beautiful inspires
-            us to craft the most beautiful nature aquariums in the world.
+            That love of beauty drives ADA, too. Just as an artist might be
+            inspired to paint, or a musician to write a tune, beauty inspires us
+            to craft the most beautiful nature aquariums in the world.
           </div>
         </div>
       </div>
     </div>
 
-    <img style="margin: 128px 0" src="images/ada-new.png" />
+    <img class="no-mobile" style="margin: 128px 0" src="images/ada-new.png" />
+    <img class="only-mobile" style="margin: 64px 0" src="images/ada-new-mobile.png" />
 
     <div class="text-section-col">
       <div class="max-width column-reverse">
@@ -178,7 +182,7 @@
 
       function handleMenuOpen(e) {
         menuOverlay.style.opacity = 1;
-        menuOverlay.style.pointerEvents = "initial";
+        menuOverlay.style.pointerEvents = "all";
       }
 
       function handleMenuClose(e) {

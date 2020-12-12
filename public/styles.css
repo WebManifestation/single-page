@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 html {
@@ -27,6 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5em;
+  overflow-x: hidden;
 }
 
 img {
@@ -36,6 +37,14 @@ img {
 video {
   display: block;
   width: 100%;
+}
+
+.no-mobile {
+  display: block;
+}
+
+.only-mobile {
+  display: none;
 }
 
 ::placeholder {
@@ -55,7 +64,7 @@ video {
 
 #search-btn {
   position: absolute;
-  bottom: 32px;
+  top: 45px;
   right: 0;
   display: flex;
   width: 45%;
@@ -74,7 +83,7 @@ video {
 }
 
 .full-video {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
@@ -126,6 +135,7 @@ video {
   margin-bottom: 8px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .title-text {
@@ -144,6 +154,7 @@ video {
   margin-bottom: 32px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .main-text {
@@ -153,10 +164,13 @@ video {
 
 .section-half {
   width: 50%;
+  /* display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 .section-half .top-text {
@@ -166,7 +180,7 @@ video {
   line-height: 1em;
   width: 25vw;
   text-align: left;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 
 .section-half .title-text {
@@ -176,21 +190,25 @@ video {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   text-align: left;
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 }
 
 .section-half .main-text {
   width: 25vw;
   text-align: left;
+  margin: 0 auto;
 }
 
 .image-discover {
-  padding: 0 64px;
+  padding: 0 128px;
   padding-left: 0;
 }
 
 .max-width {
   max-width: 1024px;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,6 +237,7 @@ video {
   margin: 32px 0;
   cursor: pointer;
   display: inline-block;
+  font-weight: 700;
 }
 
 .button img {
@@ -267,23 +286,30 @@ video {
 }
 
 .menu-item {
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: white;
   text-decoration: none;
   padding-left: 32px;
-  margin-top: 32px;
+  margin-top: 64px;
   text-align: left;
-  font-size: 32px;
+  font-size: 28px;
+  letter-spacing: 4px;
+  line-height: 1.5em;
+  font-weight: 700;
 }
 
 .container-full {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background-image: url(images/discover-space-3.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   position: relative;
 }
 
@@ -311,7 +337,8 @@ video {
 .points {
   font-family: "Open Sans", sans-serif;
   text-align: left;
-  width: 50%;
+  padding-right: 64px;
+  margin-bottom: 64px;
 }
 
 .points li {
@@ -325,14 +352,26 @@ video {
 }
 
 .floating-image {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
-  width: 44%;
+  right: 0; */
+  width: 27%;
+}
+
+.program-a {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .school-inside-container {
   background-image: url(images/school/school-2.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -357,9 +396,10 @@ video {
 
 .iframe-container {
   position: relative;
-  width: 80%;
+  width: 70%;
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 39.375%;
+  /* padding-bottom: 56.25%; */
   /* margin-bottom: 64px; */
   margin: 64px auto 64px;
 }
@@ -378,9 +418,10 @@ video {
   text-align: left;
   line-height: 1.5em;
   max-width: 1024px;
-  margin: 0 auto 128px;
+  margin: 128px auto 128px;
   letter-spacing: 4px;
   padding-left: 16px;
+  font-weight: 700;
 }
 
 .split-container {
@@ -409,8 +450,51 @@ video {
   margin: 128px auto 64px;
 }
 
+.quote-left {
+  font-family: "Montserrat", sans-serif;
+  max-width: 900px;
+  margin: 128px auto 0;
+  text-align: left;
+  font-size: 32px;
+  line-height: 1.5em;
+  padding: 32px;
+}
+
+.quote-right {
+  font-family: "Montserrat", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 32px;
+  line-height: 1.5em;
+  padding: 32px;
+}
+
+#discover-top {
+  background-position-x: 0;
+}
+
+#para-video {
+  height: 100vh;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 600px) {
+  .no-mobile {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
+
+  .menu-item {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
   #search-btn {
+    top: initial;
+    bottom: 32px;
     width: 75%;
   }
   .video-overlay-text {
@@ -451,7 +535,7 @@ video {
   }
 
   .image-discover {
-    padding: 32px 64px 64px;
+    padding: 32px 16px 64px;
   }
 
   .column-reverse {
@@ -476,7 +560,7 @@ video {
   }
 
   .container-inside {
-    bottom: 40%;
+    bottom: 15%;
     padding-left: 10%;
   }
 
@@ -495,7 +579,7 @@ video {
   }
   .floating-image {
     position: relative;
-    width: 60%;
+    width: 85%;
   }
   .school-inside-title {
     font-size: 5.2vw;
@@ -506,7 +590,7 @@ video {
   }
   .school-programs {
     font-size: 40px;
-}
+  }
 
   .split-image {
     width: 100%;
@@ -517,9 +601,38 @@ video {
   }
   .iframe-container {
     width: 100%;
+    padding-bottom: 56.25%;
   }
 
   .section-half .top-text {
     width: initial;
+    text-align: center;
+  }
+
+  .program-a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover-extra {
+    width: 85%;
+    margin: 64px auto 64px;
+  }
+
+  .container-full {
+    background-attachment: scroll;
+  }
+  .school-inside-container {
+    background-attachment: scroll;
+  }
+  #discover-top {
+    background-position-x: -128px;
+  }
+  #para-video {
+    height: initial;
+    object-fit: contain;
+  }
+  .video-top-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
