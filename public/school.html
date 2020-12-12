@@ -22,7 +22,7 @@
       <a href="./"><img id="logo-img" src="images/logo.png" alt="logo" /></a>
       <img class="menu-btn" src="images/menu.png" alt="menu" />
     </nav>
-    <div id="menu-overlay">
+    <div style="opacity: 0" id="menu-overlay">
       <a class="menu-item" href="discover.html">ada world</a>
       <a class="menu-item" href="https://shop.adaindia.in/">shop</a>
       <a class="menu-item" href="school.html">school of aquascaping</a>
@@ -501,7 +501,7 @@
 
       function handleMenuOpen(e) {
         menuOverlay.style.opacity = 1;
-        menuOverlay.style.pointerEvents = "initial";
+        menuOverlay.style.pointerEvents = "all";
       }
 
       function handleMenuClose(e) {
