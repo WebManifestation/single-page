@@ -116,7 +116,7 @@ function setVideoTextFadeInTime(videoElem, textElem, time) {
 
 function onVideoOneEnd(e) {
   if (e.target.id === "para-video") {
-    paraVideoDone = true;
+    // paraVideoDone = true;
     return;
   } else if (e.target.id === "video-1") {
     firstVideoDone = true;
