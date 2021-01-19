@@ -1,3 +1,5 @@
+import SmoothScroller from "./SmoothScroller";
+
 const video1 = document.getElementById("video-1");
 const video2 = document.getElementById("video-2");
 const video3 = document.getElementById("video-3");
@@ -124,10 +126,11 @@ function onVideoOneEnd(e) {
   const targetRect = e.target.getBoundingClientRect();
   // document.body.style.overflow = "initial";
 
-  window.scrollTo({
-    top: window.pageYOffset + targetRect.top + targetRect.height,
-    behavior: "smooth",
-  });
+  new SmoothScroller(
+    window.pageYOffset + targetRect.top + targetRect.height,
+    1500
+  ).startScrolling();
+
   if (e.target.id == "video-3") {
     document.body.style.overflow = "initial";
   }

@@ -219,6 +219,8 @@ video {
 .right-align-text .title-text,
 .right-align-text .main-text {
   text-align: right;
+  width: 100%;
+  padding-right: 64px;
 }
 
 #top-text {
@@ -246,7 +248,7 @@ video {
 }
 
 #nav {
-  height: 80px;
+  height: 100px;
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -260,6 +262,7 @@ video {
 
 #logo-img {
   width: 120px;
+  margin: 0 16px;
 }
 
 .menu-btn {
@@ -635,5 +638,12 @@ video {
   .video-top-text {
     margin-top: 16px;
     margin-bottom: 16px;
+  }
+  .mobile-less-top-padding {
+    padding-top: 64px;
+  }
+  .right-align-text .title-text,
+  .right-align-text .main-text {
+    padding-right: 0;
   }
 }
